@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/explore/explore.css">
+
+    <title>Wave~Train ~ Explore</title>
+</head>
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <!-- <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%"> -->
+          <div class="musicWrapper">
+              <h1 class="mscTitle">Starlight</h1>
+              <h2 class="mscAuth">~ <i>Santan Dave</i></h2>
+              <a href="/gallery.html">
+                <img class="mscImg" src="https://i0.wp.com/www.xclusivepop.com/wp-content/uploads/2022/03/Dave-%E2%80%93-Starlight.jpeg?fit=560%2C560&ssl=1" alt="songImage">
+             </a>
+            </div>
+          <div class="text">@ Wave~Train</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%"> -->
+          <div class="musicWrapper">
+              <h1 class="mscTitle">Rice & Stew</h1>
+              <h2 class="mscAuth">~ <i>Knucks</i></h2>
+              <a href="/">
+                <img class="mscImg" src="https://t2.genius.com/unsafe/387x387/https%3A%2F%2Fimages.genius.com%2Fbf92f67a60885c718e2f2b8454d192f9.1000x1000x1.jpg" alt="songImage">
+            </a>
+            </div>
+          <div class="text">@ Wave~Train</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%"> -->
+          <div class="musicWrapper">
+              <h1 class="mscTitle">Happy</h1>
+              <h2 class="mscAuth">~ <i>Pharrell Williams</i></h2>
+              <a href="/"></a>
+                <img class="mscImg" src="https://t2.genius.com/unsafe/409x409/https%3A%2F%2Fimages.genius.com%2F08c9cccbe508d70ae05be9c0e7d05358.1000x1000x1.jpg" alt="songImage">
+            </a>
+            </div> 
+          <div class="text">@ Wave~Train</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <footer></footer>
+
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+    <!-- <img class="ipod" src="src/img/explore/ipod.png" alt=""> -->
+
+</body>
+</html>
